@@ -493,14 +493,14 @@ svg { display: block; }
 .mockup__navlinks span {
   width: 30px; height: 6px;
   border-radius: 3px;
-  background: var(--gray-mid);
+  background: #3A3A3A;
 }
 
 .mockup__hero { margin-bottom: 28px; }
 .mockup__line {
   height: 11px;
   border-radius: 5px;
-  background: linear-gradient(90deg, var(--gray-mid), var(--gray-dark));
+  background: linear-gradient(90deg, #3A3A3A, #2A2A2A);
   margin-bottom: 10px;
 }
 .mockup__line--lg { width: 85%; height: 16px; }
@@ -518,8 +518,8 @@ svg { display: block; }
   flex: 1;
   height: 70px;
   border-radius: 10px;
-  background: var(--gray-dark);
-  border: 1px solid var(--gray-mid);
+  background: #1E1E1E;
+  border: 1px solid #3A3A3A;
 }
 
 .mockup__float {
@@ -1063,8 +1063,8 @@ section {
   background: linear-gradient(180deg, rgba(255,107,0,0.08) 0%, var(--gray-dark) 100%);
   border: 1px solid rgba(255,107,0,0.4);
   box-shadow: 0 20px 60px -20px var(--orange-glow);
-  transform: scale(1.04);
 }
+.price-card--featured.reveal.is-visible { transform: scale(1.04); }
 .price-card--featured:hover { transform: scale(1.04) translateY(-6px); }
 
 .price-card__tag {
@@ -1260,7 +1260,7 @@ section {
   .features__grid { grid-template-columns: repeat(2, 1fr); }
   .process__track { grid-template-columns: repeat(2, 1fr); gap: 40px; }
   .process__line { display: none; }
-  .price-card--featured { transform: scale(1); }
+  .price-card--featured.reveal.is-visible { transform: scale(1); }
   .price-card--featured:hover { transform: translateY(-6px); }
   .footer__inner { grid-template-columns: 1fr 1fr; }
 }
